@@ -4,7 +4,7 @@ README1.md describes using 'PHASE_1_PREPARE.ps1' together with 'PHASE_2_FLASH.ps
 
 Alternatively, README2.md describes using 'HPElitedesk800G1.ps1'.
 
-Both are intended to accomplish the same thing. 
+Both are intended to accomplish the same task. 
 
 README2.md describes how 'HPElitedesk800G1.ps1' is run twice.
 
