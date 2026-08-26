@@ -15,7 +15,7 @@ This tool automates a resilient, **completely offline** two-phase deployment cyc
 
 ---
 
-## 🛠 Prerequisites & Workspace Prep
+##  Prerequisites & Workspace Prep
 Because target host machines may be entirely **offline**, ensure the following parameters are established before executing the script:
 
 1. **Operating System:** Windows 10/11 running PowerShell 5.1+ elevated as an Administrator.
@@ -27,7 +27,7 @@ Because target host machines may be entirely **offline**, ensure the following p
 
 ---
 
-## 🚀 Step-by-Step Deployment Instructions
+##  Step-by-Step Deployment Instructions
 
 ### Phase 1: Key Extraction & Preparation
 1. Open PowerShell as an **Administrator**.
@@ -53,7 +53,7 @@ Because target host machines may be entirely **offline**, ensure the following p
 
 ---
 
-## 📊 Deployment Artifacts
+##  Deployment Artifacts
 Following a complete execution sequence, the current user's Desktop space will contain the following items:
 * `windows uefi ca 2023.crt` — The core Microsoft database compliance target update.
 * `MicWinProPCA2011.crt` — The isolated local Windows 10/11 operating system boot trust key.
@@ -63,10 +63,10 @@ Following a complete execution sequence, the current user's Desktop space will c
 
 ---
 
-## ⚠️ Architectural Isolation Disclaimer
+##  Architectural Isolation Disclaimer
 The architectural updates implemented by this utility are primarily intended to resolve forward-compatibility blocks for modern operating system installers (such as deploying modern Linux distributions). 
 
 Due to the physical platform age of Haswell 4th-generation hardware layouts (such as Intel AMT/ME 9.x frameworks), these older business workstations are naturally insulated from modern runtime firmware memory manipulation loops and bootkit vulnerabilities (e.g., BlackLotus execution paths) that target modern power sleep states and virtualization-based architectures. This script retrofits compatibility properties to legacy devices while maintaining stable physical root-of-trust constraints.
 
-## 📝 License
+##  License
 This tool is shared under the **MIT License**. Use it freely across your enterprise deployments or homelab architectures.
