@@ -31,7 +31,7 @@ Because target host machines may be entirely **offline**, ensure the following p
 
 ### Phase 1: Key Extraction & Preparation
 1. Open PowerShell as an **Administrator**.
-2. Execute the script (`SecureBoot_Compliance.ps1`).
+2. Execute the script (`HPElitedesk800G1.ps1`).
 3. The script will automatically detect that the system is running on protected factory keys. It will pull the 2011 keys to the Desktop, generate your `custom_pk.crt`, log a success state to `SecureBoot_Deployment_Report.txt`, and gracefully halt execution.
 
 ### Phase 2: Hardware Gating (BIOS Configuration)
@@ -45,7 +45,7 @@ Because target host machines may be entirely **offline**, ensure the following p
 
 ### Phase 3: Firmware Injection & Platform Locking
 1. Log back into Windows and open PowerShell as an **Administrator**.
-2. Execute the exact same script (`SecureBoot_Compliance.ps1`) a second time.
+2. Execute the exact same script (`HPElitedesk800G1.ps1`) a second time.
 3. The script will automatically detect that the platform key is unpopulated (Setup Mode). 
 4. It formats all three databases in memory, feeds them into the NVRAM chip sequentially, updates your KEK, and writes your custom PK.
 5. Once complete, the script runs an instant compliance verification match, appends the metrics to your deployment report, and outputs a **CRITICAL SUCCESS** confirmation prompt.
